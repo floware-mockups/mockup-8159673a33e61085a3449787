@@ -1,0 +1,222 @@
+{
+  "title": "Gestione inventario arredi scolastici",
+  "description": "Prototipo per consultare, filtrare e aggiornare l’inventario degli arredi nelle aule, con quantità e stato di conservazione.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Riepilogo",
+      "description": "Panoramica dell’inventario e degli arredi da verificare.",
+      "metrics": [
+        {
+          "label": "Aule censite",
+          "value": "12"
+        },
+        {
+          "label": "Arredi registrati",
+          "value": "148"
+        },
+        {
+          "label": "In buono stato",
+          "value": "112"
+        },
+        {
+          "label": "Da controllare",
+          "value": "24"
+        }
+      ],
+      "columns": [
+        "Aula",
+        "Arredo",
+        "Quantità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Banchi",
+          "18",
+          "Buono"
+        ],
+        [
+          "Vela",
+          "Sedie",
+          "24",
+          "Buono"
+        ],
+        [
+          "Nubi",
+          "Armadi",
+          "2",
+          "Da controllare"
+        ],
+        [
+          "Rivo",
+          "Tavoli",
+          "4",
+          "Da riparare"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "inventario",
+      "title": "Inventario",
+      "description": "Elenco filtrabile degli arredi registrati, organizzato per aula, quantità e stato di conservazione.",
+      "metrics": [],
+      "columns": [
+        "Aula",
+        "Arredo",
+        "Quantità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Banchi",
+          "18",
+          "Buono"
+        ],
+        [
+          "Lumo",
+          "Sedie",
+          "18",
+          "Da controllare"
+        ],
+        [
+          "Lumo",
+          "Armadio",
+          "1",
+          "Buono"
+        ],
+        [
+          "Vela",
+          "Banchi",
+          "20",
+          "Buono"
+        ],
+        [
+          "Vela",
+          "Sedie",
+          "24",
+          "Buono"
+        ],
+        [
+          "Vela",
+          "Libreria",
+          "2",
+          "Da riparare"
+        ],
+        [
+          "Nubi",
+          "Tavoli",
+          "6",
+          "Da controllare"
+        ],
+        [
+          "Nubi",
+          "Sedie",
+          "12",
+          "Buono"
+        ],
+        [
+          "Nubi",
+          "Armadi",
+          "2",
+          "Da controllare"
+        ],
+        [
+          "Rivo",
+          "Banchi",
+          "16",
+          "Buono"
+        ],
+        [
+          "Rivo",
+          "Sedie",
+          "20",
+          "Buono"
+        ],
+        [
+          "Rivo",
+          "Lavagna",
+          "1",
+          "Da riparare"
+        ]
+      ],
+      "form": [
+        "Aula",
+        "Arredo",
+        "Quantità",
+        "Stato"
+      ]
+    },
+    {
+      "id": "nuovo-arredo",
+      "title": "Registra arredo",
+      "description": "Aggiungi una voce all’inventario indicando aula, tipologia, quantità e stato.",
+      "metrics": [],
+      "columns": [
+        "Aula",
+        "Arredo",
+        "Quantità",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Aula",
+        "Arredo",
+        "Quantità",
+        "Stato"
+      ]
+    },
+    {
+      "id": "aule",
+      "title": "Aule",
+      "description": "Consulta la distribuzione degli arredi per aula e individua rapidamente quelle con elementi da controllare.",
+      "metrics": [
+        {
+          "label": "Aule elencate",
+          "value": "4"
+        },
+        {
+          "label": "Con interventi necessari",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Aula",
+        "Arredi registrati",
+        "Da controllare",
+        "Da riparare"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "37",
+          "1",
+          "0"
+        ],
+        [
+          "Vela",
+          "46",
+          "0",
+          "1"
+        ],
+        [
+          "Nubi",
+          "20",
+          "2",
+          "0"
+        ],
+        [
+          "Rivo",
+          "37",
+          "0",
+          "1"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
